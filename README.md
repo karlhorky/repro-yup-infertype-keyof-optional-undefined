@@ -1,5 +1,7 @@
 # yup `keyof InferType` includes `undefined` for optional properties
 
+Reproduction for https://github.com/jquense/yup/pull/2365
+
 `keyof InferType<…>` of an `ObjectSchema<T>` includes `undefined` when `T` has optional (`?:`) properties. `OptionalKeys` preserves the optional modifier when mapping over `T`, so the `[keyof T]` lookup also returns `undefined`:
 
 https://github.com/jquense/yup/blob/ff31eee8a2b10c938bb3a22544d9e33957a8cf01/src/util/objectTypes.ts#L62-L64
