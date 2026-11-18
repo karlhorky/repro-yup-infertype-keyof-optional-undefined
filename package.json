@@ -1,0 +1,14 @@
+{
+  "name": "repro-yup-infertype-keyof-optional-undefined",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check-types": "tsc"
+  },
+  "dependencies": {
+    "yup": "1.7.1"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}
